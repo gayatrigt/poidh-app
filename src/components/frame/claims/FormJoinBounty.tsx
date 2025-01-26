@@ -136,7 +136,7 @@ export default function JoinBounty({
             </Typography>
             <input
               type='number'
-              className='border bg-transparent border-[#D1ECFF] py-2 px-2 rounded-md mb-4 w-full placeholder:text-slate-400'
+              className='border bg-transparent border-[#D1ECFF] py-2 px-2 rounded-md mb-4 w-full placeholder:text-gray-300'
               onChange={handleAmountChange}
               placeholder={`enter amount in ${chain.currency}`}
             />
@@ -146,8 +146,7 @@ export default function JoinBounty({
           <Button
             variant='outlined'
             className={cn(
-              'w-full rounded-full lowercase bg-[#F15E5F] hover:bg-red-400 text-white font-family-geist',
-              !amount && 'opacity-50 cursor-not-allowed'
+              'w-full rounded-full lowercase bg-[#F15E5F] hover:bg-red-400 text-white font-family-geist'
             )}
             disabled={!amount}
             onClick={() => {
